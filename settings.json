@@ -1,0 +1,18 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.fontSize": 12,
+    "editor.fontFamily": "'Source Code Pro', 'Operator mono lig', 'Tanha', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontWeight": "500",
+    "editor.minimap.enabled": false,
+    "tabnine.experimentalAutoImports": true,
+    "window.menuBarVisibility": "compact",
+    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    "editor.lineNumbers": "relative",
+    "vim.smartRelativeLine": true,
+    "editor.mouseWheelScrollSensitivity": 3,
+    "editor.smoothScrolling": true,
+    "editor.cursorStyle": "line-thin",
+    "editor.lineHeight": 26,
+    "workbench.colorTheme": "One Dark Pro"
+}
