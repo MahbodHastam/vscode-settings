@@ -15,4 +15,4 @@
 
 ----
 
-- Font: 'Source Code Pro' and 'Tanha' for persian
+- Font: `Source Code Pro` and `Tanha` for persian words.
