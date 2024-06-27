@@ -8,7 +8,7 @@
     "vim.smartRelativeLine": true,
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "on",
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "400",
     "terminal.integrated.fontSize": 12,
     "git.openRepositoryInParentFolders": "never",
     "editor.fontFamily": "'Fira Code', 'Samim', 'Geist Mono', 'SF Mono', 'Cascadia Code', Consolas, 'Comic Sans MS', 'Courier New', monospace",
@@ -30,7 +30,6 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.cursorStyle": "line-thin",
     "highlight.regexes": {
         "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
             "filterFileRegex": ".*(?<!CHANGELOG.md)$",
@@ -99,7 +98,7 @@
     "prettier.useEditorConfig": false,
     "workbench.editor.labelFormat": "short",
     "css.lint.unknownAtRules": "ignore",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "vscode_vibrancy.theme": "Default Dark",
     "[php]": {
         "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
@@ -107,7 +106,6 @@
     "[blade]": {
         "editor.defaultFormatter": "shufo.vscode-blade-formatter"
     },
-    "vue.autoInsert.dotValue": true,
     "vue.inlayHints.vBindShorthand": true,
     "js/ts.implicitProjectConfig.target": "ESNext",
     "typescript.inlayHints.enumMemberValues.enabled": true,
@@ -117,11 +115,13 @@
     "workbench.list.smoothScrolling": true,
     "terminal.integrated.shellIntegration.enabled": false,
     "tailwindCSS.emmetCompletions": true,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
     "emmet.triggerExpansionOnTab": true,
     "emmet.showAbbreviationSuggestions": true,
     "window.customTitleBarVisibility": "never",
     "workbench.layoutControl.enabled": false,
-    "workbench.colorTheme": "poimandres-vue-storm",
     "editor.scrollbar.verticalScrollbarSize": 28,
     "workbench.editor.titleScrollbarSizing": "large",
     "editor.lineHeight": 0,
@@ -142,15 +142,22 @@
         "itemMargin": 0
     },
     "apc.stylesheet": {
-        // ".title-label": "display: none !important",
+        ".title-label": "display: none;",
+        // ".title-label": "position: relative;",
+        // ".title-label:before": "content: 'Ding Ding :))'; width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: #1b1e28; color: #a6accd;",
         // ".quick-input-list-row div": "display: flex !important; align-items: center !important",
         // ".sidebar .title-label": "padding-left: 10px !important",
         ".sidebar .title-label h2": "font-size: 8pt !important",
+        ".tabs-container": "margin: 0 0.33rem;",
+        ".tabs-container > .tab": "padding: 0 4px; border-radius: 8px; transition: 100ms ease; border: 1px solid transparent; font-style: italic;",
+        ".tabs-container > .tab.active": "font-weight: 600; border: 1px solid rgba(255,255,255,0.112) !important;",
+        ".tabs-container > .tab > .italic": "opacity: 0.3;",
+        ".editor-group-container.active > .title .tabs-container > .tab > .tab-actions .action-label.codicon": "transition: 85ms ease;",
     },
     "apc.statusBar": {
         "position": "editor-bottom"
-    }
+    },
+    "editor.cursorStyle": "line-thin",
+    "workbench.colorTheme": "poimandres-vue",
 }
-
-
 
