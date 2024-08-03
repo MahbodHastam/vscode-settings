@@ -1,3 +1,3 @@
 # My VSCode Settings
 
-- Font: `FiraCode`, `Geist Mono` and `Tanha` for persian words.
+- Font: `Dank Mono` and `Tanha` for persian words.
