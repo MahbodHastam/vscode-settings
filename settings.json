@@ -7,9 +7,8 @@
   "editor.lineNumbers": "relative",
   "editor.wordWrap": "on",
   "editor.fontWeight": "500",
-  "terminal.integrated.fontSize": 12,
   "git.openRepositoryInParentFolders": "never",
-  "editor.fontFamily": "'Dank Mono', 'Fira Code', 'Samim', 'CaskaydiaCove NF', 'Geist Mono', 'SF Mono', 'Cascadia Code', Consolas, 'Comic Sans MS', 'Courier New', monospace",
+  "editor.fontFamily": "'Fira Code', 'Samim', 'Dank Mono', 'CaskaydiaCove NF', 'Geist Mono', 'SF Mono', 'Cascadia Code', Consolas, 'Comic Sans MS', 'Courier New', monospace",
   "editor.fontLigatures": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "editor.stickyScroll.enabled": false,
@@ -21,7 +20,7 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "http.proxy": "socks://127.0.0.1:2080",
+  "http.proxy": "socks://127.0.0.1:2080",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.configPath": ".prettierrc.json",
   "security.workspace.trust.untrustedFiles": "newWindow",
@@ -118,19 +117,19 @@
   "workbench.layoutControl.enabled": false,
   "editor.scrollbar.verticalScrollbarSize": 28,
   // "apc.electron": {
-    // "titleBarStyle": "hidden",
-    // "transparent": true,
-    // "frame": true,
+  // "titleBarStyle": "hidden",
+  // "transparent": true,
+  // "frame": true,
   // },
   "apc.font.family": "Dank Mono",
   "apc.menubar.compact": false,
   "apc.header": {
-    "height": 30,
+    "height": 22,
     "fontSize": 12
   },
   "apc.listRow": {
     "fontSize": 12,
-    "height": 25
+    "height": 20
   },
   "apc.sidebar.titlebar": {
     "height": 30
@@ -141,9 +140,9 @@
     // "itemMargin": 0
     "position": "bottom",
     "hideSettings": true,
-    "size": 34,
+    "size": 30,
     "itemMargin": 0,
-    "itemSize": 34
+    "itemSize": 30
   },
   "apc.stylesheet": {
     ".title-label": "display: none !important;",
@@ -155,15 +154,16 @@
     // ".editor .title": "background: transparent !important",
     // ".monaco-editor .cursor": "background: linear-gradient(34deg, #00ccff, #00F3EE) !important; border-radius: 0;",
     // ".monaco-editor .cursor": "background: linear-gradient(34deg, #ff9000, #ffd704) !important; border-radius: 0; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);",
+    // ".monaco-editor .cursor": "background: #ffffffaa !important; box-shadow: 0 0 70px 5px #ffffff, #ffffff 0px 0px 34px 1px; color: [#161616](https://github.com/AlexOwl/vscode-transparent-color-theme/issues/161616) !important",
     ".action-container.highlight-toggled": "display: none !important;",
     ".editor .title .action-container .action-item a": "visibility: hidden;",
     ".editor .title .action-container": "flex-direction: row-reverse !important;",
     ".sidebar > .composite": "display: none !important;",
-    ".title-actions": "display: none !important;",
+    // ".title-actions": "display: none !important;",
     ".tabs-and-actions-container > .editor-actions": "display: none !important;",
     ".titlebar-center": "display: none !important;",
     ".titlebar-right": "display: none !important;",
-    ".inline-tabs-placeholder": "display: none !important;",
+    // ".inline-tabs-placeholder": "display: none !important;",
     ".monaco-workbench .monaco-list:focus": "outline: none !important; border: 0 !important;"
   },
   "apc.statusBar": {
@@ -181,13 +181,11 @@
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
-  "editor.lineHeight": 0,
-  "editor.fontSize": 16,
   "editor.accessibilitySupport": "off",
-  "editor.cursorStyle": "line-thin",
   "workbench.settings.editor": "json",
+  "editor.cursorStyle": "line-thin",
   "editor.cursorSmoothCaretAnimation": "off",
-  "editor.suggest.insertMode": "replace",
+  "editor.suggest.insertMode": "insert",
   "extensions.ignoreRecommendations": true,
   // "editor.codeActionsOnSave": {
   //     "source.removeUnusedImports": true,
@@ -226,5 +224,14 @@
       "commands": ["editor.action.mark.prev"]
     }
   ],
-  "workbench.colorTheme": "Gruvbox Material Modern - Medium"
+  "workbench.activityBar.location": "bottom",
+  "supermaven.enable": {
+    "*": false
+  },
+  "editor.lineHeight": 20,
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "Rosé Pine Moon",
+  "continue.enableTabAutocomplete": false,
+  "terminal.integrated.fontSize": 13
 }
+

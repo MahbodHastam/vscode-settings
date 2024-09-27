@@ -129,4 +129,15 @@
         "key": "ctrl+k",
         "command": "workbench.action.nextEditor"
     },
+    // To switch focus between terminal and editor except closing the terminal.
+    {
+        "key": "ctrl+`", // or your preferred key combination
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+`", // same key combination as above
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    }
 ]
+
