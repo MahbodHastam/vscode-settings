@@ -130,14 +130,103 @@
         "command": "workbench.action.nextEditor"
     },
     // To switch focus between terminal and editor except closing the terminal.
+    // {
+    //     "key": "ctrl+`", // or your preferred key combination
+    //     "command": "workbench.action.terminal.focus"
+    // },
+    // {
+    //     "key": "ctrl+`", // same key combination as above
+    //     "command": "workbench.action.focusActiveEditorGroup",
+    //     "when": "terminalFocus"
+    // }
+    // Down Motion
     {
-        "key": "ctrl+`", // or your preferred key combination
-        "command": "workbench.action.terminal.focus"
+        "key": "alt+j",
+        "command": "cursorDown",
+        "when": "textInputFocus"
     },
     {
-        "key": "ctrl+`", // same key combination as above
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
+        "key": "alt+j",
+        "command": "showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "alt+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+
+    // Up Motion
+    {
+        "key": "alt+k",
+        "command": "cursorUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "alt+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    // Scroll up and down using shift + j,k
+    {
+        "key": "shift+j",
+        "command": "scrollLineDown",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+k",
+        "command": "scrollLineUp",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "alt+h",
+        "command": "-editor.action.accessibilityHelpOpenHelpLink",
+        "when": "accessibilityHelpIsShown"
+    },
+    {
+        "key": "alt+h",
+        "command": "-testing.toggleTestingPeekHistory",
+        "when": "testing.isPeekVisible"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
     }
 ]
-

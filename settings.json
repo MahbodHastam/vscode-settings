@@ -1,15 +1,14 @@
 {
   "workbench.iconTheme": "moxer-icons",
   "tailwind-fold.autoFold": false,
-  "editor.minimap.enabled": false,
   "editor.smoothScrolling": true,
-  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.mouseWheelScrollSensitivity": 3,
   "editor.lineNumbers": "relative",
   "editor.wordWrap": "on",
   "editor.fontWeight": "500",
   "git.openRepositoryInParentFolders": "never",
-  "editor.fontFamily": "'Fira Code', 'Samim', 'Dank Mono', 'CaskaydiaCove NF', 'Geist Mono', 'SF Mono', 'Cascadia Code', Consolas, 'Comic Sans MS', 'Courier New', monospace",
-  "editor.fontLigatures": false,
+  "editor.fontFamily": "'Fira Code', 'Samim', 'Geist Mono', 'Anonymous Pro', 'Dank Mono', 'CaskaydiaCove NF', 'Geist Mono', 'SF Mono', 'Cascadia Code', Consolas, 'Comic Sans MS', 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "editor.stickyScroll.enabled": false,
   "Devdb.colorTheme": "dark",
@@ -84,6 +83,21 @@
         },
         {
           "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:TIP|INFO)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#00cc99",
+          "backgroundColor": "#00cc99",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#00cc99",
           "color": "#1f1f1f"
         }
       ]
@@ -185,6 +199,7 @@
   "workbench.settings.editor": "json",
   "editor.cursorStyle": "line-thin",
   "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorBlinking": "blink",
   "editor.suggest.insertMode": "insert",
   "extensions.ignoreRecommendations": true,
   // "editor.codeActionsOnSave": {
@@ -208,7 +223,7 @@
       "commands": [":q"]
     },
     {
-      "before": ["leader", "e"],
+      "before": ["leader", "q"],
       "commands": [":x!"]
     },
     {
@@ -224,14 +239,47 @@
       "commands": ["editor.action.mark.prev"]
     }
   ],
+  // "vim.vimrc": {
+  //   "set scrolloff=5": true,
+  //   "vnoremap < <gv": true,
+  //   "vnoremap > >gv": true,
+  //   "nnoremap <C-[> :noh<return>": true
+  // },
   "workbench.activityBar.location": "bottom",
   "supermaven.enable": {
-    "*": false
+    "*": true
   },
-  "editor.lineHeight": 20,
+  "editor.lineHeight": 24, // 30
   "editor.fontSize": 13,
-  "workbench.colorTheme": "Rosé Pine Moon",
   "continue.enableTabAutocomplete": false,
-  "terminal.integrated.fontSize": 13
+  "terminal.integrated.fontSize": 12,
+  "explorer.compactFolders": false,
+  "continue.showInlineTip": false,
+  "editor.minimap.enabled": false,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": [
+    "workbench.colorCustomizations"
+  ],
+  "editor.tokenColorCustomizations": {
+    "[FullstacksJS]": {
+      "textMateRules": [
+        {
+          "scope": "comment",
+          "settings": {
+            "foreground": "#6a9955",
+            "fontStyle": "italic"
+          }
+        },
+      ],
+    }
+  },
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "workbench.colorTheme": "Nord",
+  "cSpell.enabled": false,
+  "supermaven.allowGitignore": false
 }
-
