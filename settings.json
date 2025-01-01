@@ -7,7 +7,7 @@
   "editor.wordWrap": "on",
   "editor.fontWeight": "500",
   "git.openRepositoryInParentFolders": "never",
-  "editor.fontFamily": "'Fira Code', 'Samim', 'Geist Mono', 'Anonymous Pro', 'Dank Mono', 'CaskaydiaCove NF', 'Geist Mono', 'SF Mono', 'Cascadia Code', Consolas, 'Comic Sans MS', 'Courier New', monospace",
+  "editor.fontFamily": "'Dank Mono', 'Fira Code', 'Samim', 'Geist Mono', 'Anonymous Pro', 'Dank Mono', 'CaskaydiaCove NF', 'Geist Mono', 'SF Mono', 'Cascadia Code', Consolas, 'Comic Sans MS', 'Courier New', monospace",
   "editor.fontLigatures": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "editor.stickyScroll.enabled": false,
@@ -198,7 +198,8 @@
   "editor.accessibilitySupport": "off",
   "workbench.settings.editor": "json",
   "editor.cursorStyle": "line-thin",
-  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorWidth": 1,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "blink",
   "editor.suggest.insertMode": "insert",
   "extensions.ignoreRecommendations": true,
@@ -249,19 +250,16 @@
   "supermaven.enable": {
     "*": true
   },
-  "editor.lineHeight": 24, // 30
-  "editor.fontSize": 13,
+  "editor.lineHeight": 25, // 30
+  "editor.fontSize": 15,
   "continue.enableTabAutocomplete": false,
   "terminal.integrated.fontSize": 12,
   "explorer.compactFolders": false,
   "continue.showInlineTip": false,
-  "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
     "terminal.background": "#00000000"
   },
-  "workbench.settings.applyToAllProfiles": [
-    "workbench.colorCustomizations"
-  ],
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
   "editor.tokenColorCustomizations": {
     "[FullstacksJS]": {
       "textMateRules": [
@@ -271,15 +269,20 @@
             "foreground": "#6a9955",
             "fontStyle": "italic"
           }
-        },
-      ],
+        }
+      ]
     }
   },
   "svelte.enable-ts-plugin": true,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "workbench.colorTheme": "Nord",
   "cSpell.enabled": false,
-  "supermaven.allowGitignore": false
+  "supermaven.allowGitignore": false,
+  "editor.language.colorizedBracketPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "workbench.colorTheme": "poimandres-vue"
 }
